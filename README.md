@@ -6,10 +6,10 @@
 ## Setup
 1. Clone the repository
 2. Install dependencies: `npm install`
-3. Run the server: `node app.js`
+3. Run the server: `npm run start`
 4. API will be running on `http://localhost:3000`
 5. Before runing npm run test comment the following code 
-`app.listen(PORT, () => console.log("Server running on http://localhost:", PORT));`
+`app.listen(PORT, () => console.log("Server running on ", url));`
 
 ## API Endpoints
 - `POST /api/quizzes`: Create a new quiz.

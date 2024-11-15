@@ -29,6 +29,8 @@ app.get("/", (req, res) => {
     }
     res.status(200).send(homePageData);
 })
-// app.listen(PORT, () => console.log("Server running on http://localhost:", PORT));
+
+const url = `http://localhost:${PORT}`
+app.listen(PORT, () => console.log("Server running on ", url));
 
 module.exports = app;
